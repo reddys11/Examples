@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+   <class name = "com.vsr.javaHB.pojo.Customer" table="customers">
+      <meta attribute = "class-description">
+         This class contains the Customer details. 
+      </meta>
+      <id name = "Customer_ID" type = "int">
+        <!--  <generator class="native"/> -->
+      </id>
+      <property name = "Customer_Name" type = "string"/>
+      <property name = "Gender" type = "string"/>
+      <!-- <property name = "salary" column = "salary" type = "int"/> -->
+   </class>
+</hibernate-mapping>
